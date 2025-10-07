@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>tcache的发展历程 | 江畔</title><meta name="author" content="江畔"><meta name="copyright" content="江畔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f5f0fa"><meta name="description" content="tcache的发展历程前言经建议，笔者打算参加一次xctf 的分站赛，为此开始备注。遂开始复现往届比赛赛题。先从这次sekaictf-2025开始。这是从第一题开始的分析与延伸。 tcache的引入及更新2.26-2.27首先，tcache 在glibc 2.26 版本登场，其目的是为了加快堆块的管理。因此在没有作安全的检测，也为之后的利用埋下了隐患。 相关源码123456789#define T">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>tcache的发展历程 | 江畔</title><meta name="author" content="江畔"><meta name="copyright" content="江畔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#E8F5E9"><meta name="description" content="tcache的发展历程前言经建议，笔者打算参加一次xctf 的分站赛，为此开始备注。遂开始复现往届比赛赛题。先从这次sekaictf-2025开始。这是从第一题开始的分析与延伸。 tcache的引入及更新2.26-2.27首先，tcache 在glibc 2.26 版本登场，其目的是为了加快堆块的管理。因此在没有作安全的检测，也为之后的利用埋下了隐患。 相关源码123456789#define T">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tcache的发展历程">
 <meta property="og:url" content="https://peruy.github.io/2025/10/06/heap/tcache%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B/index.html">
@@ -85,13 +85,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#2d0a3d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1B5E20')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f5f0fa')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#E8F5E9')
         }
       }
 

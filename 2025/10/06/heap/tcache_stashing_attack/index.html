@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>tcache_stashing_attack | 江畔</title><meta name="author" content="江畔"><meta name="copyright" content="江畔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f5f0fa"><meta name="description" content="tcache_stashing_attack前言 虽说已经准备考公了，但是自己还是喜欢打pwn ， 感觉还是不能放弃。那就继续前进  原理1234567891011121314151617while ( tcache-&gt;counts[tc_idx] &lt; mp_.tcache_count    &amp;&amp; (tc_victim &#x3D; last (bin) ) !&#x3D; bin) &#x2F;&#x2F;">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>tcache_stashing_attack | 江畔</title><meta name="author" content="江畔"><meta name="copyright" content="江畔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#E8F5E9"><meta name="description" content="tcache_stashing_attack前言 虽说已经准备考公了，但是自己还是喜欢打pwn ， 感觉还是不能放弃。那就继续前进  原理1234567891011121314151617while ( tcache-&gt;counts[tc_idx] &lt; mp_.tcache_count    &amp;&amp; (tc_victim &#x3D; last (bin) ) !&#x3D; bin) &#x2F;&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tcache_stashing_attack">
 <meta property="og:url" content="https://peruy.github.io/2025/10/06/heap/tcache_stashing_attack/index.html">
@@ -85,13 +85,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#2d0a3d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1B5E20')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f5f0fa')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#E8F5E9')
         }
       }
 

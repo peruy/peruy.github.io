@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="hide-aside" lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>house of emma | 江畔</title><meta name="author" content="江畔"><meta name="copyright" content="江畔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f5f0fa"><meta name="description" content="house of emma前言看完了kiwi，现在来看看emma，这两个手法的思路大差不差。但是emma有一道湖湘杯的例题，学习起来会方便很多 原理源码核心同样是kiwi当中的那个断言，但是修改的思路转变了。在kiwi中是修改虚表中某个函数指针，在emma中则是修改vtable的地址。这个地址是–_IO_cookie_jumps 1234567891011121314151617181920212">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>house of emma | 江畔</title><meta name="author" content="江畔"><meta name="copyright" content="江畔"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#E8F5E9"><meta name="description" content="house of emma前言看完了kiwi，现在来看看emma，这两个手法的思路大差不差。但是emma有一道湖湘杯的例题，学习起来会方便很多 原理源码核心同样是kiwi当中的那个断言，但是修改的思路转变了。在kiwi中是修改虚表中某个函数指针，在emma中则是修改vtable的地址。这个地址是–_IO_cookie_jumps 1234567891011121314151617181920212">
 <meta property="og:type" content="article">
 <meta property="og:title" content="house of emma">
 <meta property="og:url" content="https://peruy.github.io/2025/10/06/heap/house%20of%20emma/index.html">
@@ -85,13 +85,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#2d0a3d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1B5E20')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f5f0fa')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#E8F5E9')
         }
       }
 
