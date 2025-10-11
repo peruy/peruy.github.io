@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'MonaspaceNeonFrozen-SemiBold';
+  font-display: swap; 
+  src: url('../fonts/MonaspaceNeonFrozen-SemiBold.ttf') format('truetype');
+      
+}
+@font-face {
+  font-family: 'simkai';
+  font-display: swap; 
+  src: url('../fonts/simkai.ttf') format('truetype');  
+}
+
+body {
+    font-family: 'MonaspaceNeonFrozen-SemiBold','simkai';
+}
